@@ -37,8 +37,9 @@ body {
 
 .role {
   font-size: 13px;
-  color: #555555; /* Cinza escuro para contraste */
+  color: #555555;
   line-height: 1.4;
+  white-space: nowrap; /* Impede que o texto quebre de linha */
 }
 
 .brand {
@@ -60,14 +61,12 @@ body {
   background-color: #E57200; /* INSIRA AQUI O HEX CORRETO DA MARCA */
 }
 
-.contacts {
-  vertical-align: middle;
+.contact {
   font-size: 13px;
   line-height: 1.9;
-  color: #1A1A1A;
+  color: #000000;
+  white-space: nowrap; /* Mantém ícone e texto na mesma linha */
 }
-
-/* Alinhamento clássico seguro para email (sem flexbox) */
 .contact img {
   width: 15px;
   vertical-align: middle;
@@ -92,18 +91,19 @@ body {
 }
 
 /* --- BLOCO 4: RODAPÉ E AVISO --- */
-.footer-area {
-  vertical-align: middle;
+.footer table td {
+  vertical-align: middle; /* Alinha a Logo e as Redes no mesmo eixo horizontal */
 }
 
-.social-icons {
-  text-align: right;
-  vertical-align: middle;
+.logo {
+  width: 140px; /* Reduz a logo e crava no tamanho do PNG */
+  display: block;
 }
 
-.social-icons img {
-  width: 26px;
-  margin-left: 8px;
+.social-icon {
+  width: 26px; /* Ajusta o tamanho para ficar similar ao PNG */
+  height: auto;
+  margin-left: 10px; /* Respiro entre os ícones */
   vertical-align: middle;
 }
 
@@ -111,8 +111,6 @@ body {
   padding-top: 20px;
 }
 
-.disclaimer {
-  font-size: 10px;
-  color: #666666;
-  line-height: 1.4;
+.disclaimer-area {
+  padding-top: 30px; /* Força o distanciamento da área superior */
 }
