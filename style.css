@@ -121,7 +121,7 @@ body {
 
 .footer {
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 26px;
 }
 
 .logo {
@@ -141,7 +141,7 @@ body {
 /* AVISO */
 
 .disclaimer {
-  padding-top: 3px;
+  padding-top: 0;
   font-size: 9px;
   line-height: 14px;
   color: #999999;
