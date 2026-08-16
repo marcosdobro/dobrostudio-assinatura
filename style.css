@@ -10,14 +10,22 @@ body {
   color: #333333;
 }
 
+/* =========================
+   PREVIEW
+========================= */
+
 .preview {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  background: #ffffff;
   padding: 50px;
+  background: #ffffff;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
 }
+
+/* =========================
+   ASSINATURA
+========================= */
 
 .signature {
   width: 700px;
@@ -26,7 +34,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* FOTO */
+/* =========================
+   BLOCO PRINCIPAL
+========================= */
+
+.main-area {
+  padding: 0 0 24px 0;
+}
+
+/* =========================
+   FOTO
+========================= */
 
 .photo-area {
   width: 110px;
@@ -41,16 +59,16 @@ body {
   object-fit: cover;
 }
 
-/* IDENTIDADE */
+/* =========================
+   IDENTIDADE
+========================= */
 
 .identity {
   width: 300px;
-  padding-right: 25px;
-  vertical-align: middle;
+  padding-right: 28px;
 }
 
 .name {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 22px;
@@ -69,7 +87,9 @@ body {
   color: #555555;
 }
 
-/* DIVISOR */
+/* =========================
+   DIVISOR LARANJA
+========================= */
 
 .divider-area {
   width: 1px;
@@ -82,10 +102,12 @@ body {
   background: #E57200;
 }
 
-/* CONTATOS */
+/* =========================
+   CONTATOS
+========================= */
 
 .contacts {
-  padding-left: 28px;
+  padding-left: 0;
   vertical-align: middle;
 }
 
@@ -96,12 +118,16 @@ body {
   line-height: 18px;
 }
 
+.contact:last-child {
+  margin-bottom: 0;
+}
+
 .contact img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: -3px;
   margin-right: 7px;
+  vertical-align: -3px;
 }
 
 .contact a {
@@ -109,25 +135,42 @@ body {
   text-decoration: none;
 }
 
-/* LINHA */
+/* =========================
+   LINHA HORIZONTAL
+========================= */
 
-.orange-line {
+.separator {
+  padding: 0;
+}
+
+.separator div {
+  width: 100%;
   height: 1px;
-  margin-top: 25px;
   background: #E57200;
 }
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+========================= */
 
-.footer {
+.brand-footer {
   padding-top: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 }
 
 .logo {
   display: block;
   width: 108px;
   height: auto;
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social-area {
+  padding-right: 0;
+  white-space: nowrap;
 }
 
 .social-icon {
@@ -138,11 +181,14 @@ body {
   vertical-align: middle;
 }
 
-/* AVISO */
+/* =========================
+   CONFIDENCIALIDADE
+========================= */
 
 .disclaimer {
-  padding-top: 0;
+  padding-top: 4px;
   font-size: 9px;
   line-height: 14px;
   color: #999999;
+  text-align: left;
 }
