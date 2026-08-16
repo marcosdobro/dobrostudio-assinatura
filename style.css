@@ -1,129 +1,148 @@
-/* RESET BÁSICO E TIPOGRAFIA */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 60px;
+  background: #f3f1ed;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  color: #333333;
+}
+
+.preview {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
 }
 
 .signature {
-  width: 100%;
-  max-width: 650px;
-  color: #000000;
+  width: 700px;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- BLOCO 1: FOTO E IDENTIDADE --- */
+/* FOTO */
+
 .photo-area {
+  width: 110px;
   padding-right: 20px;
-  vertical-align: middle;
 }
 
 .profile-photo {
+  display: block;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  display: block;
+  object-fit: cover;
 }
 
+/* IDENTIDADE */
+
 .identity {
-  vertical-align: middle;
+  width: 300px;
   padding-right: 25px;
+  vertical-align: middle;
 }
 
 .name {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000000;
-  margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #202020;
 }
 
 .role {
-  font-size: 13px;
-  color: #555555;
-  line-height: 1.4;
-  white-space: nowrap; /* Trava o cargo e o "Ondulado" na mesma linha */
+  font-size: 12px;
+  line-height: 18px;
+  color: #777777;
 }
 
 .brand {
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
-  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #555555;
 }
 
-/* --- BLOCO 2: DIVISOR VERTICAL E CONTATOS --- */
+/* DIVISOR */
+
 .divider-area {
-  padding: 0 20px;
-  vertical-align: middle;
+  width: 1px;
+  padding-right: 28px;
 }
 
 .divider {
   width: 2px;
-  height: 75px;
-  background-color: #E57200; /* Cor Laranja */
+  height: 90px;
+  background: #E57200;
 }
 
+/* CONTATOS */
+
 .contacts {
+  padding-left: 28px;
   vertical-align: middle;
 }
 
 .contact {
-  font-size: 13px;
-  line-height: 1.9;
-  color: #000000;
-  white-space: nowrap; /* Impede a quebra de linha do e-mail */
+  white-space: nowrap;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .contact img {
-  width: 15px;
-  vertical-align: middle;
-  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  margin-right: 7px;
 }
 
-.contact span, .contact a {
-  vertical-align: middle;
-  color: #000000;
+.contact a {
+  color: #707070;
   text-decoration: none;
 }
 
-/* --- BLOCO 3: LINHA HORIZONTAL --- */
-.horizontal-line-area {
-  padding: 25px 0;
-}
+/* LINHA */
 
-.horizontal-line {
+.orange-line {
   height: 1px;
-  width: 100%;
-  background-color: #E57200;
+  margin-top: 25px;
+  background: #E57200;
 }
 
-/* --- BLOCO 4: RODAPÉ E AVISO --- */
-.footer td {
-  vertical-align: middle; /* Alinha a logo e os ícones sociais no meio */
+/* RODAPÉ */
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .logo {
-  width: 135px; /* Restringe o tamanho da Logo */
   display: block;
-}
-
-.social-icons {
-  text-align: right;
-  vertical-align: middle;
+  width: 108px;
+  height: auto;
 }
 
 .social-icon {
-  width: 26px; /* Escala os ícones sociais */
-  height: auto;
-  margin-left: 10px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
   vertical-align: middle;
 }
 
-.disclaimer-area {
-  padding-top: 30px; /* Respiro entre a logo e o texto de aviso */
-}
+/* AVISO */
 
 .disclaimer {
-  font-size: 10px;
-  color: #666666;
-  line-height: 1.4;
-  text-align: left;
+  padding-top: 3px;
+  font-size: 9px;
+  line-height: 14px;
+  color: #999999;
 }
