@@ -1,0 +1,1 @@
+# dobrostudio-assinatura
