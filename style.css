@@ -1,148 +1,118 @@
-* {
-  box-sizing: border-box;
-}
-
+/* RESET BÁSICO E TIPOGRAFIA */
 body {
-  margin: 0;
-  padding: 60px;
-  background: #f3f1ed;
   font-family: Arial, Helvetica, sans-serif;
-  color: #333333;
-}
-
-.preview {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 50px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+  -webkit-font-smoothing: antialiased;
 }
 
 .signature {
-  width: 700px;
-  max-width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 650px;
+  color: #1A1A1A;
 }
 
-/* FOTO */
-
+/* --- BLOCO 1: FOTO E IDENTIDADE --- */
 .photo-area {
-  width: 110px;
   padding-right: 20px;
-}
-
-.profile-photo {
-  display: block;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* IDENTIDADE */
-
-.identity {
-  width: 300px;
-  padding-right: 25px;
   vertical-align: middle;
 }
 
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+}
+
+.identity {
+  vertical-align: middle;
+  padding-right: 25px;
+}
+
 .name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 22px;
-  color: #202020;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1A1A1A;
+  margin-bottom: 2px;
 }
 
 .role {
-  font-size: 12px;
-  line-height: 18px;
-  color: #777777;
+  font-size: 13px;
+  color: #555555; /* Cinza escuro para contraste */
+  line-height: 1.4;
 }
 
 .brand {
-  font-size: 12px;
-  line-height: 18px;
-  color: #555555;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1A1A1A;
+  margin-top: 4px;
 }
 
-/* DIVISOR */
-
+/* --- BLOCO 2: DIVISOR VERTICAL E CONTATOS --- */
 .divider-area {
-  width: 1px;
-  padding-right: 28px;
+  padding: 0 20px;
+  vertical-align: middle;
 }
 
 .divider {
   width: 2px;
-  height: 90px;
-  background: #E57200;
+  height: 75px;
+  background-color: #E57200; /* INSIRA AQUI O HEX CORRETO DA MARCA */
 }
-
-/* CONTATOS */
 
 .contacts {
-  padding-left: 28px;
   vertical-align: middle;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #1A1A1A;
 }
 
-.contact {
-  white-space: nowrap;
-  margin-bottom: 8px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
+/* Alinhamento clássico seguro para email (sem flexbox) */
 .contact img {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: -3px;
-  margin-right: 7px;
+  width: 15px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
-.contact a {
-  color: #707070;
+.contact span, .contact a {
+  vertical-align: middle;
+  color: #1A1A1A;
   text-decoration: none;
 }
 
-/* LINHA */
+/* --- BLOCO 3: LINHA HORIZONTAL (NOVA) --- */
+.horizontal-line-area {
+  padding: 25px 0;
+}
 
-.orange-line {
+.horizontal-line {
   height: 1px;
-  margin-top: 25px;
-  background: #E57200;
+  width: 100%;
+  background-color: #E57200; /* INSIRA AQUI O HEX CORRETO DA MARCA */
 }
 
-/* RODAPÉ */
-
-.footer {
-  padding-top: 20px;
-  padding-bottom: 15px;
+/* --- BLOCO 4: RODAPÉ E AVISO --- */
+.footer-area {
+  vertical-align: middle;
 }
 
-.logo {
-  display: block;
-  width: 108px;
-  height: auto;
+.social-icons {
+  text-align: right;
+  vertical-align: middle;
 }
 
-.social-icon {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
+.social-icons img {
+  width: 26px;
   margin-left: 8px;
   vertical-align: middle;
 }
 
-/* AVISO */
+.disclaimer-area {
+  padding-top: 20px;
+}
 
 .disclaimer {
-  padding-top: 3px;
-  font-size: 9px;
-  line-height: 14px;
-  color: #999999;
+  font-size: 10px;
+  color: #666666;
+  line-height: 1.4;
 }
