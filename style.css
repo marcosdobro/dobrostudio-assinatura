@@ -105,12 +105,15 @@ body {
   height: auto;
   margin-left: 10px; /* Respiro entre os ícones */
   vertical-align: middle;
-}
-
-.disclaimer-area {
-  padding-top: 20px;
-}
+} /* <-- ESTA É A CHAVE QUE FALTAVA PARA FECHAR O BLOCO */
 
 .disclaimer-area {
   padding-top: 30px; /* Força o distanciamento da área superior */
+}
+
+.disclaimer {
+  font-size: 10px;
+  color: #666666;
+  line-height: 1.4;
+  text-align: left;
 }
