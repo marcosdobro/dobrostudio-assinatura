@@ -7,7 +7,7 @@ body {
 .signature {
   width: 100%;
   max-width: 650px;
-  color: #1A1A1A;
+  color: #000000;
 }
 
 /* --- BLOCO 1: FOTO E IDENTIDADE --- */
@@ -31,7 +31,7 @@ body {
 .name {
   font-size: 16px;
   font-weight: bold;
-  color: #1A1A1A;
+  color: #000000;
   margin-bottom: 2px;
 }
 
@@ -39,13 +39,13 @@ body {
   font-size: 13px;
   color: #555555;
   line-height: 1.4;
-  white-space: nowrap; /* Impede que o texto quebre de linha */
+  white-space: nowrap; /* Trava o cargo e o "Ondulado" na mesma linha */
 }
 
 .brand {
   font-size: 14px;
   font-weight: bold;
-  color: #1A1A1A;
+  color: #000000;
   margin-top: 4px;
 }
 
@@ -58,15 +58,20 @@ body {
 .divider {
   width: 2px;
   height: 75px;
-  background-color: #E57200; /* INSIRA AQUI O HEX CORRETO DA MARCA */
+  background-color: #E57200; /* Cor Laranja */
+}
+
+.contacts {
+  vertical-align: middle;
 }
 
 .contact {
   font-size: 13px;
   line-height: 1.9;
   color: #000000;
-  white-space: nowrap; /* Mantém ícone e texto na mesma linha */
+  white-space: nowrap; /* Impede a quebra de linha do e-mail */
 }
+
 .contact img {
   width: 15px;
   vertical-align: middle;
@@ -75,11 +80,11 @@ body {
 
 .contact span, .contact a {
   vertical-align: middle;
-  color: #1A1A1A;
+  color: #000000;
   text-decoration: none;
 }
 
-/* --- BLOCO 3: LINHA HORIZONTAL (NOVA) --- */
+/* --- BLOCO 3: LINHA HORIZONTAL --- */
 .horizontal-line-area {
   padding: 25px 0;
 }
@@ -87,28 +92,33 @@ body {
 .horizontal-line {
   height: 1px;
   width: 100%;
-  background-color: #E57200; /* INSIRA AQUI O HEX CORRETO DA MARCA */
+  background-color: #E57200;
 }
 
 /* --- BLOCO 4: RODAPÉ E AVISO --- */
-.footer table td {
-  vertical-align: middle; /* Alinha a Logo e as Redes no mesmo eixo horizontal */
+.footer td {
+  vertical-align: middle; /* Alinha a logo e os ícones sociais no meio */
 }
 
 .logo {
-  width: 140px; /* Reduz a logo e crava no tamanho do PNG */
+  width: 135px; /* Restringe o tamanho da Logo */
   display: block;
 }
 
-.social-icon {
-  width: 26px; /* Ajusta o tamanho para ficar similar ao PNG */
-  height: auto;
-  margin-left: 10px; /* Respiro entre os ícones */
+.social-icons {
+  text-align: right;
   vertical-align: middle;
-} /* <-- ESTA É A CHAVE QUE FALTAVA PARA FECHAR O BLOCO */
+}
+
+.social-icon {
+  width: 26px; /* Escala os ícones sociais */
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 
 .disclaimer-area {
-  padding-top: 30px; /* Força o distanciamento da área superior */
+  padding-top: 30px; /* Respiro entre a logo e o texto de aviso */
 }
 
 .disclaimer {
