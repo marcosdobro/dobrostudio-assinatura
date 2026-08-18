@@ -97,7 +97,7 @@ body {
 }
 
 .divider {
-  width: 2px;
+  width: 1px;
   height: 90px;
   background: #E57200;
 }
@@ -142,12 +142,6 @@ body {
 .separator div {
   width: 100%;
   height: 1px;
-  background: #E57200;
-}
-
-.separator div {
-  width: 100%;
-  height: 2px;
   background: #E57200;
 }
 
