@@ -168,6 +168,7 @@ body {
   padding: 0;
   white-space: nowrap;
   vertical-align: middle;
+  transform: translateX(-19px);
 }
 
 .social-link {
