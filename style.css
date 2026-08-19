@@ -174,14 +174,11 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 0;
-  margin: 0 0 0 8px;
+  margin: 0;
 }
 
-.social-icon {
-  display: block;
-  width: 22px;
-  height: 22px;
-  border: 0;
+.social-link + .social-link {
+  margin-left: 8px;
 }
 
 /* =========================
